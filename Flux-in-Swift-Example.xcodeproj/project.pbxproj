@@ -14,6 +14,13 @@
 		A092B5311BEB411A009A173D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A092B52F1BEB411A009A173D /* LaunchScreen.storyboard */; };
 		A092B53C1BEB411A009A173D /* Flux_in_Swift_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A092B53B1BEB411A009A173D /* Flux_in_Swift_ExampleTests.swift */; };
 		A092B5471BEB411A009A173D /* Flux_in_Swift_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A092B5461BEB411A009A173D /* Flux_in_Swift_ExampleUITests.swift */; };
+		A0D41F891BECDA1A00BDA204 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D41F881BECDA1900BDA204 /* Store.swift */; };
+		A0D41F8B1BECDA5400BDA204 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D41F8A1BECDA5400BDA204 /* Dispatcher.swift */; };
+		A0D41F8E1BECDA8B00BDA204 /* TodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D41F8D1BECDA8B00BDA204 /* TodoStore.swift */; };
+		A0D41F911BECDAB300BDA204 /* TodoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D41F901BECDAB300BDA204 /* TodoAction.swift */; };
+		A0D41F931BECDAEC00BDA204 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D41F921BECDAEC00BDA204 /* TodoItem.swift */; };
+		A0D41F951BECDB0E00BDA204 /* StoreListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D41F941BECDB0E00BDA204 /* StoreListener.swift */; };
+		A0D41F981BECE1BE00BDA204 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D41F971BECE1BE00BDA204 /* Payload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		A092B5421BEB411A009A173D /* Flux-in-Swift-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flux-in-Swift-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A092B5461BEB411A009A173D /* Flux_in_Swift_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flux_in_Swift_ExampleUITests.swift; sourceTree = "<group>"; };
 		A092B5481BEB411A009A173D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D41F881BECDA1900BDA204 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A0D41F8A1BECDA5400BDA204 /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		A0D41F8D1BECDA8B00BDA204 /* TodoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoStore.swift; sourceTree = "<group>"; };
+		A0D41F901BECDAB300BDA204 /* TodoAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoAction.swift; sourceTree = "<group>"; };
+		A0D41F921BECDAEC00BDA204 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		A0D41F941BECDB0E00BDA204 /* StoreListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreListener.swift; sourceTree = "<group>"; };
+		A0D41F971BECE1BE00BDA204 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,10 @@
 		A092B5251BEB411A009A173D /* Flux-in-Swift-Example */ = {
 			isa = PBXGroup;
 			children = (
+				A0D41F921BECDAEC00BDA204 /* TodoItem.swift */,
+				A0D41F8F1BECDAA800BDA204 /* Action */,
+				A0D41F8C1BECDA7F00BDA204 /* Store */,
+				A0D41F961BECDBA900BDA204 /* Dispatcher */,
 				A092B5261BEB411A009A173D /* AppDelegate.swift */,
 				A092B5281BEB411A009A173D /* ViewController.swift */,
 				A092B52A1BEB411A009A173D /* Main.storyboard */,
@@ -123,6 +141,33 @@
 				A092B5481BEB411A009A173D /* Info.plist */,
 			);
 			path = "Flux-in-Swift-ExampleUITests";
+			sourceTree = "<group>";
+		};
+		A0D41F8C1BECDA7F00BDA204 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				A0D41F881BECDA1900BDA204 /* Store.swift */,
+				A0D41F941BECDB0E00BDA204 /* StoreListener.swift */,
+				A0D41F8D1BECDA8B00BDA204 /* TodoStore.swift */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		A0D41F8F1BECDAA800BDA204 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				A0D41F901BECDAB300BDA204 /* TodoAction.swift */,
+			);
+			name = Action;
+			sourceTree = "<group>";
+		};
+		A0D41F961BECDBA900BDA204 /* Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				A0D41F971BECE1BE00BDA204 /* Payload.swift */,
+				A0D41F8A1BECDA5400BDA204 /* Dispatcher.swift */,
+			);
+			name = Dispatcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D41F931BECDAEC00BDA204 /* TodoItem.swift in Sources */,
+				A0D41F951BECDB0E00BDA204 /* StoreListener.swift in Sources */,
+				A0D41F891BECDA1A00BDA204 /* Store.swift in Sources */,
+				A0D41F981BECE1BE00BDA204 /* Payload.swift in Sources */,
+				A0D41F8E1BECDA8B00BDA204 /* TodoStore.swift in Sources */,
 				A092B5291BEB411A009A173D /* ViewController.swift in Sources */,
+				A0D41F911BECDAB300BDA204 /* TodoAction.swift in Sources */,
+				A0D41F8B1BECDA5400BDA204 /* Dispatcher.swift in Sources */,
 				A092B5271BEB411A009A173D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +536,7 @@
 				A092B54D1BEB411A009A173D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A092B54E1BEB411A009A173D /* Build configuration list for PBXNativeTarget "Flux-in-Swift-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +545,7 @@
 				A092B5501BEB411A009A173D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A092B5511BEB411A009A173D /* Build configuration list for PBXNativeTarget "Flux-in-Swift-ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +554,7 @@
 				A092B5531BEB411A009A173D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
